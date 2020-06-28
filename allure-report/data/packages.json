@@ -1,0 +1,65 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "Complex Counter App: Default counter",
+    "children" : [ {
+      "name" : "TC-001 Header is present on the page  ",
+      "uid" : "27741a5f30f1104a",
+      "parentUid" : "9f7d6e30cebf36e0f8ce607487abd6ef",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593301811001,
+        "stop" : 1593301818619,
+        "duration" : 7618
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome" ]
+    } ],
+    "uid" : "9f7d6e30cebf36e0f8ce607487abd6ef"
+  }, {
+    "name" : "Complex Counter App: Elements exist",
+    "children" : [ {
+      "name" : "TC-002 Header",
+      "uid" : "85cf8ce3ebcaefa0",
+      "parentUid" : "052d549376f8c3bea9cf8c07a75a3098",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593301819130,
+        "stop" : 1593301819417,
+        "duration" : 287
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome" ]
+    }, {
+      "name" : "TC-003 Total Result",
+      "uid" : "76b3add1e70d922c",
+      "parentUid" : "052d549376f8c3bea9cf8c07a75a3098",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593301819417,
+        "stop" : 1593301820251,
+        "duration" : 834
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome" ]
+    }, {
+      "name" : "TC-004 Counter Name",
+      "uid" : "ff9238395df6cd3f",
+      "parentUid" : "052d549376f8c3bea9cf8c07a75a3098",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593301820251,
+        "stop" : 1593301821349,
+        "duration" : 1098
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "chrome" ]
+    } ],
+    "uid" : "052d549376f8c3bea9cf8c07a75a3098"
+  } ]
+}

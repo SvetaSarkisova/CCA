@@ -1,0 +1,5 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Sat Jun 27 16:50:20 PDT 2020","Sat Jun 27 16:50:21 PDT 2020","1098","","Complex Counter App: Elements exist","","Complex Counter App: Elements exist","TC-004 Counter Name","TC-004 Counter Name",""
+"passed","Sat Jun 27 16:50:19 PDT 2020","Sat Jun 27 16:50:20 PDT 2020","834","","Complex Counter App: Elements exist","","Complex Counter App: Elements exist","TC-003 Total Result","TC-003 Total Result",""
+"passed","Sat Jun 27 16:50:19 PDT 2020","Sat Jun 27 16:50:19 PDT 2020","287","","Complex Counter App: Elements exist","","Complex Counter App: Elements exist","TC-002 Header","TC-002 Header",""
+"passed","Sat Jun 27 16:50:11 PDT 2020","Sat Jun 27 16:50:18 PDT 2020","7618","","Complex Counter App: Default counter","","Complex Counter App: Default counter","TC-001 Header is present on the page  ","TC-001 Header is present on the page  ",""

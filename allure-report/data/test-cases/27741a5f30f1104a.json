@@ -1,0 +1,110 @@
+{
+  "uid" : "27741a5f30f1104a",
+  "name" : "TC-001 Header is present on the page  ",
+  "fullName" : "Complex Counter App: Default counter.TC-001 Header is present on the page  ",
+  "historyId" : "c8f1ddede0ad66fbb8f0b724fe4cef7d",
+  "time" : {
+    "start" : 1593301811001,
+    "stop" : 1593301818619,
+    "duration" : 7618
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST /session/:sessionId/url",
+      "time" : {
+        "start" : 1593301813075,
+        "stop" : 1593301816593,
+        "duration" : 3518
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "cc19229f76434b0a",
+        "name" : "Request",
+        "source" : "cc19229f76434b0a.json",
+        "type" : "application/json",
+        "size" : 53
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "GET /session/:sessionId/title",
+      "time" : {
+        "start" : 1593301816595,
+        "stop" : 1593301816614,
+        "duration" : 19
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "97058eb73ac962a6",
+        "name" : "Response",
+        "source" : "97058eb73ac962a6.json",
+        "type" : "application/json",
+        "size" : 21
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 2,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Complex Counter App: Default counter"
+  }, {
+    "name" : "testClass",
+    "value" : "Complex Counter App: Default counter"
+  }, {
+    "name" : "testMethod",
+    "value" : "TC-001 Header is present on the page  "
+  }, {
+    "name" : "package",
+    "value" : "Complex Counter App: Default counter"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "27741a5f30f1104a.json",
+  "parameterValues" : [ "chrome" ]
+}

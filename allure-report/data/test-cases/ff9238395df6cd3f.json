@@ -1,0 +1,122 @@
+{
+  "uid" : "ff9238395df6cd3f",
+  "name" : "TC-004 Counter Name",
+  "fullName" : "Complex Counter App: Elements exist.TC-004 Counter Name",
+  "historyId" : "bf5b037898a9ec1040b1ee80e922a74a",
+  "time" : {
+    "start" : 1593301820251,
+    "stop" : 1593301821349,
+    "duration" : 1098
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST /session/:sessionId/elements",
+      "time" : {
+        "start" : 1593301820252,
+        "stop" : 1593301821313,
+        "duration" : 1061
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "8a070f6c27b389a3",
+        "name" : "Request",
+        "source" : "8a070f6c27b389a3.json",
+        "type" : "application/json",
+        "size" : 46
+      }, {
+        "uid" : "f1aec798299af060",
+        "name" : "Response",
+        "source" : "f1aec798299af060.json",
+        "type" : "application/json",
+        "size" : 184
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "POST /session/:sessionId/execute/sync",
+      "time" : {
+        "start" : 1593301821323,
+        "stop" : 1593301821348,
+        "duration" : 25
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "4fa200ab48d30e75",
+        "name" : "Request",
+        "source" : "4fa200ab48d30e75.json",
+        "type" : "application/json",
+        "size" : 5306
+      }, {
+        "uid" : "7321f234d70b5924",
+        "name" : "Response",
+        "source" : "7321f234d70b5924.json",
+        "type" : "application/json",
+        "size" : 4
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 2,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Complex Counter App: Elements exist"
+  }, {
+    "name" : "testClass",
+    "value" : "Complex Counter App: Elements exist"
+  }, {
+    "name" : "testMethod",
+    "value" : "TC-004 Counter Name"
+  }, {
+    "name" : "package",
+    "value" : "Complex Counter App: Elements exist"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ff9238395df6cd3f.json",
+  "parameterValues" : [ "chrome" ]
+}

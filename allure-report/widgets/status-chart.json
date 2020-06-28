@@ -1,0 +1,41 @@
+[ {
+  "uid" : "ff9238395df6cd3f",
+  "name" : "TC-004 Counter Name",
+  "time" : {
+    "start" : 1593301820251,
+    "stop" : 1593301821349,
+    "duration" : 1098
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "76b3add1e70d922c",
+  "name" : "TC-003 Total Result",
+  "time" : {
+    "start" : 1593301819417,
+    "stop" : 1593301820251,
+    "duration" : 834
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "85cf8ce3ebcaefa0",
+  "name" : "TC-002 Header",
+  "time" : {
+    "start" : 1593301819130,
+    "stop" : 1593301819417,
+    "duration" : 287
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "27741a5f30f1104a",
+  "name" : "TC-001 Header is present on the page  ",
+  "time" : {
+    "start" : 1593301811001,
+    "stop" : 1593301818619,
+    "duration" : 7618
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
