@@ -11,13 +11,16 @@
   "counter": {
     "counterName": "h3",
     "lowerLimitField": "[name='negative']",
+    "lowerInputField": "[name='lower']",
     "upperLimitField": "[name='positive']",
+    "upperInputField": "[name='upper']",
     "countValue": "[data-test='badge']",
     "deleteBtn": "[class='btn-danger btn Ripple-parent delete']",
     "resetBtn": "[class='btn-primary btn Ripple-parent reset']",
     "editNameField": "[name='edit']",
     "editNameFieldLabel": "label",
-    "blkBtn": ".btn-black"
+    "blkBtn": ".btn-black",
+    "error0": ".alert"
 
 
   }
