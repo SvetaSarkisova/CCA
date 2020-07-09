@@ -25,13 +25,35 @@ describe('Default counter functionality', function () {
         const result = $(selectorCnt.error0).isDisplayed();
         expect(result).toEqual(false);
     })
-    /*
-        it('TC-044 LLF = 1 and ULF = 1 gives 2 black buttons', function () {
-            browser.pause(1000);
-            //inputNumber('left', expectedDCF.inputMin);
-            inputNumber('right', expectedDCF.inputMin);
-            const actual = $$(selectorCnt.blackBtn).filter(el => el.isDisplayed()).length;
-            expect(actual).toEqual(expectedDCF.countValueTC041);
-        })
-    */
+    it('TC-044 LLF = 1 and ULF = 1 gives 2 black buttons', function () {
+        browser.refresh();
+        inputNumber('left', expectedDCF.inputMin);
+        inputNumber('right', expectedDCF.inputMin);
+        const actual = $$(selectorCnt.blackBtn).filter(el => el.isDisplayed()).length;
+        expect(actual).toEqual(+expectedDCF.countValueTC041);
+    })
+    it('TC-045 UIF = 9 and LIF = 9 gives 2 black buttons ', function () {
+        browser.refresh();
+        inputNumber('right', expectedDCF.inputMax);
+        inputNumber('left', expectedDCF.inputMax)
+        const result = $$(selectorCnt.blackBtn).length;
+        expect(result).toEqual(2);
+    });
+    it('TC-046 Reset button works ', function () {
+        browser.refresh();
+        const button = $$(selectorCnt.blackBtn)[5];
+        button.click();
+        const result = $(selectorGen.totalResult).getText();
+        expect(result).toEqual(expectedDCF.totalValueTC046)
+        const resButton = $(selectorCnt.resetBtn).click();
+        const result1 = $(selectorGen.totalResult).getText();
+        expect(result1).toEqual(expectedGen.totalResult);
+    });
+    it('TC-047 Delete button works ', function () {
+        browser.refresh();
+        const button= $(selectorCnt.deleteBtn);
+        button.click();
+        const result = $$(selectorCnt.counterName).length
+        expect(result).toEqual(1)
+    });
 });

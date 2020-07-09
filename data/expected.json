@@ -9,7 +9,7 @@
     "addCounterBtn": "ADD COUNTER"
   },
   "counter": {
-    "counterName": "Default Counter",
+    "counterName": "1. Default Counter",
     "lowerLimitField": "CHANGE STEP OPTIONS?",
     "upperLimitField": "CHANGE STEP OPTIONS?",
     "lowerInputField": "1",

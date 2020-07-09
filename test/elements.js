@@ -148,45 +148,82 @@ describe('Complex Counter App', function () { //define suite title by passing a 
             expect(actual).toEqual(true);
         });
 
+        it('TC-026 Input for LLF', function () {
+            $(counter.lowerLimitField).click()
+            const actual = $(counter.lowerInputField).isDisplayed();
+            expect(actual).toEqual(true);
+        })
+
+        it('TC-027 Input for ULF', function () {
+            $(counter.upperLimitField).click()
+            const actual = $(counter.upperInputField).isDisplayed();
+            expect(actual).toEqual(true);
+        })
+
+
     });
 
-    describe('Elements value', function () {
+    describe('Default Counter Elements value', function () {
 
-        it('TC-031, T-032 Default Btns = -1,-2,-3, 1, 2, 3', function () {
+        it('TC-028, Counter Name = 1. Default Counter', function () {
+            const actual = $$(counter.counterName)[1].getText();
+            expect(actual).toEqual(counterValues.counterName);
+        })
+
+        it('TC-029 Count Value = 0', function () {
+            const actual = $(counter.countValue).getText();
+            expect(actual).toEqual(counterValues.countValue);
+        })
+
+
+        it('TC-031, T-033 Default Btns = -1,-2,-3, 1, 2, 3', function () {
             const actual = $$(counter.blkBtn).map(el => el.getText());
             expect(actual).toEqual(counterValues.blkBtn);
         })
 
-        // it('TC-010 Total Result = Total: 0', function () {
-        //     const actual = $(general.totalResult).getText();
-        //     expect(actual).toEqual(values.totalResult);
-        // })
+        it('TC-030 LLF = CHANGE STEP OPTIONS?', function () {
+            browser.refresh()
+            const actual = $(counter.lowerLimitField).getText();
+            expect(actual).toEqual(counterValues.lowerLimitField);
+        })
 
-        // it('TC-011 Placeholder  for Add Name Field = Counter Name', function () {
-        //     const actual = $(general.addNameField).getValue()
-        //     expect(actual).toEqual(values.addNameField);
-        // })
-        //
-        //
-        // it('TC-012 Label for Add Name Field = Enter Counter Title:', function () {
-        //     const actual = $$(general.addNameFieldLabel)[$$(general.addNameFieldLabel).length-2].getText();
-        //     expect(actual).toEqual(values.addNameFieldLabel);
-        // })
-        //
-        // it('TC-013 Label for Dafault Value Field = Enter Initial Count', function () {
-        //     const actual = $$(general.defaultValueFieldLabel)[$$(general.addNameFieldLabel).length-1].getText();
-        //     expect(actual).toEqual(values.defaultValueFieldLabel);
-        // })
-        //
-        // it('TC-014 Default Value Field text = 50', function () {
-        //     const actual = $(general.defaultValueField).getValue();
-        //     expect(actual).toEqual(values.defaultValueField);
-        // })
-        //
-        // it('TC-015 Add Counter = ADD COUNTER', function () {
-        //     const actual = $(general.addCounterBtn).getText();
-        //     expect(actual).toEqual(values.addCounterBtn);
-        // });
+        it('TC-032 ULF = CHANGE STEP OPTIONS?', function () {
+            const actual = $(counter.upperLimitField).getText();
+            expect(actual).toEqual(counterValues.upperLimitField);
+        })
+
+        it('TC-034 Delete Button = Delete', function () {
+            const actual = $(counter.deleteBtn).getText()
+            expect(actual).toEqual(counterValues.deleteBtn);
+        })
+
+        it('TC-035 Reset Button = Reset', function () {
+            const actual = $(counter.resetBtn).getText()
+            expect(actual).toEqual(counterValues.resetBtn);
+        })
+
+        it('TC-036 Label = Edit Counter Title:', function () {
+            const actual = $(counter.editNameFieldLabel).getText()
+            expect(actual).toEqual(counterValues.editNameFieldLabel);
+        })
+
+        it('TC-037 Placeholder for Edit Name Field = Default Counter', function () {
+            const actual = $(counter.editNameField).getValue()
+            expect(actual).toEqual(counterValues.editNameField);
+        })
+
+        it('TC-038 Input for LLF = 1', function () {
+            $(counter.lowerLimitField).click()
+            const actual = $(counter.lowerInputField).getValue();
+            expect(actual).toEqual(counterValues.lowerInputField);
+        })
+
+        it('TC-039 Input for LLF = 1', function () {
+            $(counter.upperLimitField).click()
+            const actual = $(counter.lowerInputField).getValue();
+            expect(actual).toEqual(counterValues.lowerInputField);
+        })
+
 
 
 
